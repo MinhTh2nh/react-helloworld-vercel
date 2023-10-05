@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import Contact from "./Pages/Contact";
+import AboutPage from "./Pages/About/AboutPage";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello World
-        </a>
-        <p>
-         From MT with love :33 
-        </p>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </div>
   );
 }

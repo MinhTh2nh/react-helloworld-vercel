@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-font:30px;
+    --font-15px:15px;
+    --Title-font:40px;
+    --header-height:46px;
+}
+*{
+    box-sizing: border-box;
+}
+/* Header  */
+.main-header{
+    height: var(--header-height);
+    background: #556d74;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: inline-block;
+}
+/* body{
+    background-color: rgb(0, 0, 0);
+} */
+.main-header ul{
+    display: inline-block;
+}
+.main-header li{
+    display: inline-block;
+}
+.pd28{
+    padding: 0 28px;
+}
+.main-header a{
+    color: aliceblue;
+    font-size: var(--primary-font);
+    text-decoration: none;
+    line-height: var(--header-height);
+}
+.main-header .fa-bell:hover,.main-header li:hover a {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    /* Ke thua tat ca chieu cao  */
+    display: inherit;
+}
+#mobileMenu{
+    display: none;
+}
+.main-header .mobile-menu,
+.main-header-bell{
+    float: right;
+}
+.main-header .mobile-menu .fa-bars,
+.main-header-bell .far{
+    font-size: var(--primary-font);
+    color: #ffffff;
+    line-height: var(--header-height);
+}
+
+.main-header .mobile-menu:hover{
+    background-color: #ccc;
+}
+.main-header .mobile-menu:hover .menu-icon{
+    color: #000;
+}
+/* Slider */
+#slider-container{
+    margin-top: var(--header-height);
+    padding-top: 30%;
+    background : url(/src/ImgSrc/anh1.jpg) top  no-repeat;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-size: contain;
+}
+
+#slider-container .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #ffffff;
+    /* left: 50%;#
+    transform: translateX(-50%); */
+    /* width: 100%; */
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+.text-description{
+    color:red
+}
+
+/* About  */
+#about-section{
+    background: #ffffff;
+    width: 100%;
+}
+.about-section-content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+}
+.about-section-content .section-heading{
+    font-size: var(--primary-font);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.about-section-content .section-sub-heading{
+    font-size: var(--font-15px);
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}   
+.t-a-c{
+    font-size: var(--font-15px);
+    text-align: center;
+}
+#about-section .about-text{
+    font-size: var(--font-15px);
+    margin-top: 25px;
+    text-align: justify center;
+}
+
+/* Member-list */
+#about-section .member-list{
+    margin-top: 45px;    
+    overflow: hidden;
+}
+.member-item .member-avt{
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+/*  <!-- Tour section --> */
+.tour-section{
+    background : #000
+}
+.tour-section .ticket-list{
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+.ticket-list li{
+    font-size: var(--font-15px);
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket-list .sold-out{
+    color: #ffffff;
+    padding: 3px 4px;
+    background: #f43336;
+    margin-left: 20px;
+}
+.ticket-list .quantity{
+    float: right;
+    background-color: #000;
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+.clear{
+    clear: both;
+}
+/* Place-list */
+.place-avt{
+    width: 100%;
+}
+.place-time, .place-avt:hover{
+    opacity: 0.7;
+}
+.place-item{
+    float: left;
+    padding: 0 12px;
+}
+.place-time , .place-description{
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.place-buy-btn{
+    color: #ddd;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: inline-block;
+} 
+.place-buy-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.place-item .place-body{
+    font-size: 15px;
+    padding: 16px;
+    background-color: #ddd;
+}
+
+
+
+/* Modal Buy Ticket Pop up */
+.modal-buyTicket{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 0, 0 , 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.8s;
+}
+
+header.modal-header{
+    background: #009688;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--Title-font);
+    color: white;
+}
+.modal-header .fa-cart-shopping{
+    margin-right:  15px;
+}
+.modal-close{
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: white;
+}
+.modal-close:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: var(--font-15px);
+    margin-bottom: 15px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: var(--font-15px);
+    margin-bottom: 15px;
+}
+#buy-tickets{
+    width: 100%;
+    border: none;
+    color: white;
+    background: #009688;
+    font-size: var(--primary-font);
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color:#2196F3;
+}
+.open{
+    display: flex;
+}
+/* Contact form*/   
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.contact-info i[class *= "fa-"]{
+    width: 30px;
+}
+.contact-form{
+    font-size: 20px;
+}
+input.form-control {
+    line-height: 1.5;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+.m-btn{
+    margin-right: -4px;
+}
+/* Map-Section */
+
+.map-section img{
+    height: 50%;
+    width: 100%;
+}
+/* Footer */
+#footer{
+    padding: 48px 16px;
+    text-align: center;
+    font-size: var(--primary-font);
+}
+
+.social-lists a{
+    color: #000 !important;
+    opacity: 0.8;
+    text-decoration: none;
+}
+#footer .copy-right a:hover,
+.social-lists a:hover{
+    opacity: 0.3;
+}
+#footer .copy-right{
+    font-size: var(--font-15px);
+    margin-top: 15px;
+}
+#footer .copy-right a{
+    color: #000 !important;
+    opacity: 0.8;
+}
+/* Button submit Contact-Form */
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-150px);  
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Row - columns layout */
+.col{
+    float: left;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+.row{
+    margin-right: -12px;
+    margin-left: -12px;
+}
+/* Thay the class Clear */
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.pd8{
+    padding: 0 8px;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.col3{
+    width: calc(100% / 3)  ;
+}
+.col-half{
+    width: calc(100% / 2)  ;
+}
+.col-full{
+    width: 100%  ;
+}
+.text-white{
+    color: white !important;
+}
+.text-align{
+    text-align: center !important;
+}
+.pull-right{
+    float: right !important;
+}
