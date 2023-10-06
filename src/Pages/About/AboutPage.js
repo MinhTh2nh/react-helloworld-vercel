@@ -18,15 +18,15 @@ const AboutPage = () => {
   return (
     <div className="container">
       <header id="header" class="main-header">
-        <ul class="main-header-links ">
-          <li class="main-header-link">
+      <ul class="main-header-links ">
+      <li class="main-header-link">
             <Button
               id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
-              class="pd28-subMenu"
+              class="dashboard pd28"              
             >
               Dashboard
             </Button>

@@ -65,3 +65,13 @@
 .menu-sub:hover{
     display: block !important;
 }
+.dashboard{
+    text-align: center;
+    line-height: var(--header-height);
+    color: white;
+    font-size: var(--primary-font);
+    text-decoration: none;
+    outline: none !;
+    border: none !important;
+    background: #556d74;
+ }

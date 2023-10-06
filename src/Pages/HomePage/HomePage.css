@@ -45,7 +45,7 @@
     text-decoration: none;
     line-height: var(--header-height);
 }
-.main-header .fa-bell:hover,.main-header li:hover a {
+.main-header .fa-bell:hover,.main-header li:hover a  ,.main-header li:hover .dashboard{
     background-color: #ffffff;
     color: black;
     cursor: pointer;
@@ -398,4 +398,15 @@ input.form-control {
 }
 .pull-right{
     float: right !important;
+}
+
+.dashboard{
+   text-align: center;
+   line-height: var(--header-height);
+   color: white;
+   font-size: var(--primary-font);
+   text-decoration: none;
+   outline: none !;
+   border: none !important;
+   background: #556d74;
 }

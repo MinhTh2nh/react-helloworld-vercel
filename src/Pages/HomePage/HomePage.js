@@ -28,7 +28,7 @@ const HomePage = () => {
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
-              class="pd28-subMenu"
+              class="dashboard pd28"              
             >
               Dashboard
             </Button>
@@ -54,7 +54,6 @@ const HomePage = () => {
           </li>
           <li class="main-header-link">
             <Link to="/about" class="pd28">
-
               About
             </Link>
           </li>
