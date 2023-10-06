@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Slider from "../../components/slider/Slider";
 const HomePage = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -68,13 +69,7 @@ const HomePage = () => {
           <i class="pd28 fa-solid fa-bars menu-icon"></i>
         </div>
       </header>
-      <div id="slider-container">
-        <div class="text-content">
-          <span class="text-description">
-     Tấm hình nói lên tất cả :33
-          </span>
-        </div>
-      </div>
+      <Slider/>
       <div id="about-section">
         <div class="about-section-content" id="about">
           <h2 class="section-heading">Minh Thành</h2>

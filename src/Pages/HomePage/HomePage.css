@@ -72,31 +72,6 @@
 .main-header .mobile-menu:hover .menu-icon{
     color: #000;
 }
-/* Slider */
-#slider-container{
-    margin-top: var(--header-height);
-    padding-top: 30%;
-    background : url(/src/ImgSrc/anh1.jpg) top  no-repeat;
-    position: relative;
-    background-color: rgb(0, 0, 0);
-    background-size: contain;
-}
-
-#slider-container .text-content{
-    position: absolute;
-    bottom: 47px;
-    color: #ffffff;
-    /* left: 50%;#
-    transform: translateX(-50%); */
-    /* width: 100%; */
-    right: 0;
-    left: 0;
-    text-align: center;
-}
-.text-description{
-    color:red
-}
-
 /* About  */
 #about-section{
     background: #ffffff;
